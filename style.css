@@ -1,0 +1,567 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: black;
+}
+
+/* header */
+header {
+    position: relative;
+}
+
+.hero-image {
+    position: relative;
+    width: 100%;
+    height: 550px;
+    overflow: hidden;
+}
+
+.hero-image img {
+    /* Adjusted width to ensure it covers the viewport better */
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures image covers the area without distortion */
+}
+
+.head {
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    max-width: 1550px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    color: #fff;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+}
+
+.nav ul li {
+    margin: 0 1rem;
+}
+
+.nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav ul li a:hover {
+    color: #9b5be5;
+}
+
+.welcome {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: #ffeded;
+}
+
+.w1 {
+    font-size: 35px;
+    color: rgb(181, 86, 190);
+}
+.w1:hover{
+    font-size: 40px;
+}
+.w2 {
+    font-size: 25px;
+    line-height: 50px;
+}
+.w3 {
+    font-size: 15px;
+    color: #f0ecec;
+}
+.w4 {
+    font-size: 13px;
+    cursor: pointer;
+    background-color: #000000;
+    color: #d2a2ed;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 10px;
+    border: #d2a2ed solid 1px;
+}
+.w4:hover {
+    background-color: #d2a2ed;
+    color: #000000;
+}
+
+/* about */
+.abouttxt {
+    display: flex;
+    justify-content: center;
+}
+.p1 {
+    font-size: 30px;
+    color: #f0ecec;
+    padding-right: 15px;
+}
+.p2 {
+    font-size: 30px;
+    color: rgb(181, 86, 190);
+}
+.p3 {
+    margin-top: 20px;
+    font-size: 15px;
+    color: #ffeded;
+    text-align: center;
+    justify-content: center;
+}
+.about {
+    display: flex;
+    position: relative;
+    color: #f0ecec;
+    padding: 20px;
+}
+.about1 {
+    display: flex;
+    padding: 0 200px; /* Adjust padding to bring sections closer if needed */
+    margin: 60px 0; /* Adjusted margin for consistency */
+}
+.about2 {
+    display: flex;
+    margin: 30px 0; /* Adjusted margin for consistency */
+}
+.about11, .about12 {
+    flex: 1;
+    margin: 10px;
+    padding: 20px;
+    line-height: 30px;
+}
+.about211, .about212, .about221, .about222 {
+    flex: 1;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    color: #ffffff;
+    text-align: center;
+    border-radius: 20px;
+    border: #ffffff solid 1px;
+    box-shadow: 0 4px 8px rgb(169,85,249);
+}
+.about211:hover, .about212:hover, .about221:hover, .about222:hover{
+    padding: 30px;
+    border-radius: 50%;
+}
+.atxt {
+    color: #ffeded;
+    padding-left: 300px; /* Keep consistent with design */
+}
+.a1 {
+    font-size: 15px;
+    color: grey;
+}
+.a2 {
+    font-size: 15px;
+    color: white;
+    padding-left: 10px;
+}
+.a3 {
+    font-size: 20px;
+    color: rgb(169, 85, 249);
+}
+.a4 {
+    font-size: 13px;
+    color: rgb(169, 85, 249);
+}
+.a5 {
+    font-size: 12px;
+    color: #ffffff;
+}
+.abtn {
+    cursor: pointer;
+    background-color: black;
+    color: azure;
+    border: pink solid 1px;
+    border-radius: 40px;
+    padding: 10px;
+    margin-top: 15px;
+}
+.abtn:hover{
+    background-color: pink;
+    color: #000000;
+}
+
+/* skill list (new styling for skills) */
+/* ==== IMPROVED SKILL SECTION ==== */
+.skill-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    gap: 30px;
+    max-width: 900px;       /* Controls width without breaking layout */
+    margin: 0 auto;          /* Center the whole grid */
+    padding: 40px 20px;
+    color: #ffffff;
+}
+
+
+.skill-category {
+    background-color: #1a1a1a;
+    border: 1px solid #9b5be5;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.skill-category h3 {
+    color: #d2a2ed;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    border-bottom: 1px dashed #444;
+    padding-bottom: 5px;
+}
+
+.skill-category ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.skill-category ul li {
+    font-size: 0.95rem;
+    margin: 6px 0;
+    color: #ccc;
+}
+
+
+/* education */
+.maineduc {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.education {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    margin-left: 350px;
+}
+.educ {
+    width: 450px;
+}
+.e1 {
+    color: #d2a2ed;
+    font-size: 13px;
+}
+.e1 span {
+    font-size: 20px;
+    margin-left: -20px;
+    color: #ffffff;
+}
+.e2 {
+    color: #ffffff;
+    font-size: 20px;
+}
+.e2 span {
+    color: #fff;
+    font-size: 12px;
+}
+.e3 {
+    color: #878383;
+    font-size: 10px;
+}
+/* ==== CERTIFICATE SECTION ==== */
+.certificate-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 40px 20px;
+    color: #ffffff;
+}
+
+.certificate-card {
+    background-color: #1a1a1a;
+    border: 1px solid #9b5be5;
+    border-radius: 10px;
+    padding: 20px;
+    width: 350px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.certificate-card:hover {
+    transform: translateY(-5px);
+}
+
+.certificate-card h3 {
+    color: #d2a2ed;
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+}
+
+.certificate-card p {
+    font-size: 0.9rem;
+    color: #ccc;
+}
+
+/* projects (new section styling) */
+.project-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    gap: 30px;
+    max-width: 900px;       /* Controls width without breaking layout */
+    margin: 0 auto;          /* Center the whole grid */
+    padding: 40px 20px;
+    color: #ffffff;
+}
+
+.project-card {
+    background-color: #1a1a1a;
+    border: 1px solid #9b5be5;
+    border-radius: 10px;
+    padding: 25px;
+    width: 450px; /* Adjust width as needed */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    color: #ddc4f5;
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-card h3 {
+    color: #d2a2ed;
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+}
+
+.project-card p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: #ccc;
+}
+
+.project-card a {
+    display: inline-block;
+    margin-top: 15px;
+    color: #d2a2ed;
+    text-decoration: none;
+    border: 1px solid #d2a2ed;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.project-card a:hover {
+    background-color: #d2a2ed;
+    color: #000000;
+}
+
+
+/* contact */
+.contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Align items to the start of the cross-axis */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    color: #ffffff;
+    padding: 20px; /* Add padding to the contact container */
+}
+
+.con1 {
+    padding-left: 180px; /* Keep existing padding for design */
+    width: 50%;
+}
+
+.con2 {
+    padding-left: 40px;
+    width: 50%;
+}
+
+.c1{
+    font-size: 22px;
+}
+.c2{
+    font-size: 12px;
+}
+.c3{
+    color: #d2a2ed;
+    font-size: 16px;
+    margin-top: 15px; /* Add some space above contact details */
+}
+.c4{
+    font-size: 13px;
+}
+input, textarea{
+    border-radius: 5px;
+    background: none;
+    border: none;
+    border-bottom: #9b5be5 solid 1px;
+    text-align: center;
+    font-size: 15px;
+    padding: 10px;
+}
+input[type="text"]:focus, 
+textarea:focus {
+    color:#ddc4f5;
+}
+input[type="text"], 
+textarea {
+    color:#ddc4f5;
+    font-size: 15px;
+}
+
+.cbtn{
+    border-radius: 30px;
+    padding: 10px 30px;
+    font-size: 20px;
+    border: solid white 1px;
+    color: #ddc4f5;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.cbtn:hover {
+    background-color: #d2a2ed;
+    color: #000000;
+}
+
+/* Footer */
+footer {
+    width: 100%;
+    background-color: #131313;
+    color: #fff;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-content h2 {
+    margin: 0;
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #d2a2ed;
+}
+
+.footer-content p {
+    margin: 0;
+    font-size: 11px;
+    margin-bottom: 20px;
+    max-width: 800px; /* Limit width for readability */
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-icons a {
+    color: #fff;
+    font-size: 25px;
+    text-decoration: none;
+    transition: color 0.3s;
+    border: solid pink 1px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex; /* Use flex to center the icon */
+    justify-content: center;
+    align-items: center;
+}
+
+.social-icons a:hover {
+    color: #000000; 
+    background-color: pink;
+}
+
+/* Removed old skill, work, and blog specific styles as they are replaced or removed */
+/* You had .skill, .sk1, .link, .pic, .page, .logo1, .logo2, .container, .row, .card, .image-container, .play-button */
+/* The new skill-list, project-list, project-card replace these. */
+
+/* Responsive adjustments if needed, though not explicitly requested, good practice */
+@media (max-width: 768px) {
+    .head {
+        flex-direction: column;
+        padding: 0.5rem;
+    }
+    .nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 10px;
+    }
+    .nav ul li {
+        margin: 0.5rem;
+    }
+    .welcome {
+        text-align: center;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90%;
+    }
+    .about, .education, .contact {
+        flex-direction: column;
+        padding: 10px;
+        align-items: center;
+    }
+    .about1, .about2, .con1, .con2 {
+        padding: 0;
+        width: 90%;
+        margin-left: 0;
+    }
+    .atxt {
+        padding-left: 0;
+        text-align: center;
+    }
+    .about211, .about212, .about221, .about222 {
+        padding: 15px;
+    }
+    .educ {
+        width: 90%;
+        margin-left: 0;
+    }
+    .skill-category, .project-card {
+        width: 90%;
+    }
+    .contact {
+        align-items: center;
+    }
+    input[type="text"], 
+    textarea {
+        width: 100%;
+        box-sizing: border-box; /* Ensures padding and border are included in the element's total width */
+    }
+    .con2 form table {
+        width: 100%;
+    }
+    .con2 form table tr td {
+        display: block;
+        width: 100%;
+    }
+    .con2 form table tr td:first-child {
+        margin-bottom: 10px;
+    }
+}
